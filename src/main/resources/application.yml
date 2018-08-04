@@ -1,0 +1,20 @@
+
+management:
+  info:
+    git:
+     mode: full
+  endpoints:
+    web:
+      base-path: /management
+
+server:
+  compression:
+    enabled: true
+    mime-types: application/json,application/xml,text/html,text/xml,text/plain
+
+logging:
+  level:
+    org:
+      springframework:
+        web: debug
+  file: /var/log/validation.log
